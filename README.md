@@ -1,2 +1,2 @@
 # MetronomeDataProcessingMatlab
-Files for processing raw data from teh tidal tilting flume 'The Metronome' in Matlab
+Files for processing raw data from the tidal tilting flume 'The Metronome' in Matlab
