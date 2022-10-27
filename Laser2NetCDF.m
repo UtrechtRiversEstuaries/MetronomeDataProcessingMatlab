@@ -318,7 +318,7 @@ netcdf.putAtt(fileid,NC_GLOBAL,'comments',comments)
 netcdf.putAtt(fileid,NC_GLOBAL,'institution',institution)
 netcdf.putAtt(fileid,NC_GLOBAL,'source',source)
 netcdf.putAtt(fileid,NC_GLOBAL,'references',references)
-netcdf.putAtt(fileid,NC_GLOBAL,'history',history)
+
 netcdf.putAtt(fileid,NC_GLOBAL,'summary',summary)
 netcdf.putAtt(fileid,NC_GLOBAL,'keywords',keywords)
 
@@ -330,6 +330,8 @@ netcdf.putAtt(fileid,NC_GLOBAL,'CreatedBy',author)
 netcdf.putAtt(fileid,NC_GLOBAL,'Correspondence_to',correspondence)
 
 if new==true
+    netcdf.putAtt(fileid,NC_GLOBAL,'history',history) %history is only added in a new file and otherwise appended 
+
     % DEM group attributes
     netcdf.putAtt(dems,NC_GLOBAL,'title',dems_title) 
     netcdf.putAtt(dems,NC_GLOBAL,'long_title',dems_long_title) 
