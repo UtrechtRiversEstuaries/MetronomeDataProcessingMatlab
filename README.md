@@ -8,7 +8,7 @@ This file processes the raw laser scanner .tif images to DEMs in netCDF format. 
 
 * laserMetronome_ESL.m
 
-This file is a function used by Laser2NetCDF.m. Here the actual processing takes place.
+This file is a function used by Laser2NetCDF.m. Here the actual processing takes place. The calibration is still based on Exp046, so not up to date. This is accounted for in the main script. That part should be taken out when the calibration is updated.
 
 * NetCDF2Plots.m
 
